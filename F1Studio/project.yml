@@ -1,0 +1,26 @@
+name: F1 Studio
+settings:
+  SWIFT_VERSION: "5.0"
+  SWIFT_OBJC_BRIDGING_HEADER: Sources/Packets.h
+  GENERATE_INFOPLIST_FILE: NO
+targets:
+  F1 Studio:
+    type: application
+    platform: macOS
+    supportedDestinations: [macOS, iOS]
+    sources: [Sources]
+    info:
+      path: Info.plist
+      properties:
+        NSLocalNetworkUsageDescription: Advertise a MIDI session and play connected instruments over your local network.
+        UIBackgroundModes: [audio]
+        NSBonjourServices: ["_apple-midi._udp"]
+        UILaunchScreen: {}
+        CFBundleShortVersionString: "0.1"
+        CFBundleVersion: "1"
+    settings:
+      PRODUCT_BUNDLE_IDENTIFIER: com.vrcreativegroup.f1studio
+      MACOSX_DEPLOYMENT_TARGET: "14.0"
+      IPHONEOS_DEPLOYMENT_TARGET: "17.0"
+      TARGETED_DEVICE_FAMILY: "1,2"
+      ENABLE_APP_SANDBOX: NO

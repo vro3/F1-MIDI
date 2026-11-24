@@ -1,0 +1,25 @@
+name: F1 Remote
+settings:
+  SWIFT_VERSION: "5.0"
+  SWIFT_OBJC_BRIDGING_HEADER: Sources/Packets.h
+  GENERATE_INFOPLIST_FILE: NO
+targets:
+  F1 Remote:
+    type: application
+    platform: macOS
+    supportedDestinations: [macOS, iOS]
+    sources: [Sources, Presets, ../F1Studio/Sources/PadLight.swift]
+    info:
+      path: Info.plist
+      properties:
+        NSLocalNetworkUsageDescription: Send controller actions to your OSC destinations over the local network.
+
+        UILaunchScreen: {}
+        CFBundleShortVersionString: "0.1"
+        CFBundleVersion: "1"
+    settings:
+      PRODUCT_BUNDLE_IDENTIFIER: com.vrcreativegroup.f1remote
+      MACOSX_DEPLOYMENT_TARGET: "14.0"
+      IPHONEOS_DEPLOYMENT_TARGET: "17.0"
+      TARGETED_DEVICE_FAMILY: "1,2"
+      ENABLE_APP_SANDBOX: NO
