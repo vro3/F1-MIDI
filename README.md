@@ -42,3 +42,7 @@ The [firmware guide](firmware/README.md) explains how to reconstruct the exact t
 - For a firmware contribution, report the starting image hash, USB speed, exact request, observed response and whether the result came from a simulator or physical hardware. Avoid posting unit serials or private network details.
 
 The Z2 work by AdT-Andreas Erkel provided a useful starting point for the XMOS investigation. This repository concerns the F1. [Z2-ReConnect](https://github.com/AdTurntables/Z2-ReConnect)
+
+## License
+
+The MIT license covers this project's original code and documentation. Native Instruments retains its rights in its original updater and firmware, which you supply separately. [MIT license](LICENSE)
